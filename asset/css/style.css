@@ -12,7 +12,7 @@ body::before{
     position: absolute;
     background: linear-gradient(45deg,hsl(264, 100%, 61%),hsl(293, 100%, 63%));
     height: 90vh;
-    width: 500px;
+    width: 400px;
     border-radius:  0 0 250px 250px;
     z-index: -1;
     -webkit-border-radius:  0 0 250px 250px;
@@ -31,7 +31,7 @@ body::after{
     position: absolute;
     background: #f9f4fa;
     height: 90vh;
-    width: 500px;
+    width: 400px;
     right: 0;
     bottom: 0;
     border-radius:   250px 250px 0 0;
@@ -52,6 +52,7 @@ body::after{
     align-items: center;
     justify-content: center;
     height: 100vh;
+    margin: 0 auto;
 }
 .content{
     display: flex;
@@ -343,29 +344,21 @@ body::after{
   }
   
   /* Styles for medium desktop screens */
-@media (min-width: 768px) {
+  @media screen and (min-width: 786px) {
     .container {
-      max-width: 768px; /* Adjust this value as needed */
-      margin: 0 auto;
+      width: 750px;
     }
   }
-  
-  /* Styles for large desktop screens */
-  @media (min-width: 1200px) {
+  @media screen and (min-width: 992px) {
     .container {
-      max-width: 1200px; /* Adjust this value as needed */
-      margin: 0 auto;
+      width: 970px;
     }
   }
-  
-
-/* Media query for large screens */
-@media screen and (min-width: 993px) {
+  @media screen and (min-width: 1200px) {
     .container {
-        max-width: 993px; /* Adjust this value as needed */
-        margin: 0 auto;
+      width: 1170px;
     }
-}
+  }
 @media screen and (max-width: 993px) {
 body::before{
         transform: translateX(-50%);
